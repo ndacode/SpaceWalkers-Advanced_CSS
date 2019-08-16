@@ -1,17 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
 // Home Content
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+}
 
-.home {
 
+.container-home {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  .top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+    img {
+      border-radius: 20px;
+      width: 100%;
+    }
     h2 {
-      padding: 15px;
+      color: @title;
+      padding:20px 0px;
+      margin-left: 10px;
     }
-
     p {
-      padding:0 15px;
+      color: @p;
+      font-style: @font-style;
     }
-  
   }
 
   .space-images {
@@ -28,7 +207,7 @@
   }
 
   .visit-planets {
-    padding: 15px;
+    .intro();
 
     h3 {
       margin-top: 11px;
@@ -47,6 +226,7 @@
     justify-content: center;
 
     .walk-text {
+      .intro();
       width: 50%;
 
       h3 {
@@ -58,6 +238,10 @@
       }
 
       .btn {
+        text-align: center;
+        border: gold;
+        padding: @padding;
+        background-color: @pushme;
       }
     }
 

@@ -1,5 +1,4 @@
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
-
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
 
 ## Instructions
@@ -38,11 +37,10 @@ Edit this document to include your answers after each question. Make sure to lea
         Mobile-first means that the mobile layout design is created before the tablet and desktop designs. This also will mean that the min-width media query is used in the css rather than the max-width media query.
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
         Usually default font-size of the browser is 16px. Setting font-size: 100% will make 1rem = 16px. But it will make calculations a little difficult. A better way is to set font-size: 62.5%. Because 62.5% of 16px is 10px. Which makes 1rem = 10px.
-        
 4. How would you describe preprocessing to someone new to CSS?
-        Preprocessing is condensing your css file by stacking and repeating CSS layout instructions. The combined commands can be called up regularly in the design and function of your entire website. They allow you to make changes to a specific element without going through the entire css document to change elements one-by-one. They make the design process a lot faster.
+        Preprocessing is using a development application to expedite and organize the document styling process by combining recurrent directives, which are later compilted into a CSS style sheet. This make the design process a lot faster and improves the document's uniformity.
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-        My favorite concept in the preprocessing it makes you consider what design elements are repeated and where, prior to building the site. Helps with design styling uniformity and reduces errors as well. Stacking functionalities in a way that the cascade will adhere to without any problems.
+        My favorite concept in the preprocessing is it decreases development time and reduces repetition. Combining commands and executing the exact required syntax and keywords in a way that the cascade will adhere without any problems is the most challenging for me.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

@@ -37,7 +37,8 @@ Edit this document to include your answers after each question. Make sure to lea
 2. Describe what it means to be mobile first vs desktop first.
         Mobile-first means that the mobile layout design is created before the tablet and desktop designs. This also will mean that the min-width media query is used in the css rather than the max-width media query.
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-        This allows us to provide content that will take a percentage of the User's screen settings. It improve's a website's accesibility for visually impaired users.
+        This allows us to provide content that will take a percentage of the User's screen settings. It improve's a website's accesibility for visually impaired users. 
+        
 4. How would you describe preprocessing to someone new to CSS?
         Preprocessing is condensing your css file by stacking and repeating design commands. The combined commands can be called up regularly in the design and function of your entire website. They allow you to make changes to a specific element without going through the entire css document to change elements one-by-one. They make the design process a lot faster.
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?

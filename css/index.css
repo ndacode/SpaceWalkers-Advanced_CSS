@@ -160,15 +160,25 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.top-box {
+  display: flex;
+  flex-direction: column;
+}
+.top-box h3 {
+  text-align: center;
+  margin: 20px;
+}
+.top-box nav {
   display: flex;
   flex-direction: row;
-  margin: 25px;
+  justify-content: center;
 }
-nav a {
+.top-box nav a {
   text-decoration: none;
   color: slategrey;
-  margin: 25px;
+  font-size: 20px;
+  margin: 10px;
+  align-content: center;
 }
 footer {
   color: #22283B;
@@ -179,6 +189,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer p {
+  padding: 40px 300px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -301,7 +314,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -316,16 +329,16 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -337,87 +350,44 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 1000px;
-}
 .container-home {
   display: flex;
   flex-direction: column;
-  margin: 25px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 50px;
+  border: 1px solid grey;
 }
 .container-home .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-.container-home .intro img {
-  border-radius: 20px;
   width: 100%;
+  border: 1px solid grey;
 }
-.container-home .intro h2 {
-  color: darkblue;
-  padding: 20px 0px;
-  margin-left: 10px;
+.container-home .intro div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
-.container-home .intro p {
-  color: grey;
-  font-style: 'Russo One', sans-serif;
-}
-@media (max-width: 500px) {
-  .container-home .intro {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+.container-home .intro div img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border-radius: 0%;
 }
 .container-home .space-images {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-}
-.container-home .space-images .blast img {
-  width: 100%;
-  height: 100%;
+  border: 1px solid grey;
 }
 .container-home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   height: 100%;
-}
-@media (max-width: 500px) {
-  .container-home .space-images {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-}
-.container-home .visit-planets {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.container-home .visit-planets img {
   border-radius: 20px;
-  width: 100%;
-}
-.container-home .visit-planets h2 {
-  color: darkblue;
-  padding: 20px 0px;
-  margin-left: 10px;
-}
-.container-home .visit-planets p {
-  color: grey;
-  font-style: 'Russo One', sans-serif;
-}
-@media (max-width: 500px) {
-  .container-home .visit-planets {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
 }
 .container-home .visit-planets h3 {
   margin-top: 11px;
@@ -430,33 +400,11 @@ p {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .container-home .walk .walk-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 50%;
-}
-.container-home .walk .walk-text img {
-  border-radius: 20px;
-  width: 100%;
-}
-.container-home .walk .walk-text h2 {
-  color: darkblue;
-  padding: 20px 0px;
-  margin-left: 10px;
-}
-.container-home .walk .walk-text p {
-  color: grey;
-  font-style: 'Russo One', sans-serif;
-}
-@media (max-width: 500px) {
-  .container-home .walk .walk-text {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
 }
 .container-home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -464,26 +412,23 @@ p {
 .container-home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.container-home .walk .walk-text .btn button {
+.container-home .walk .walk-text button {
   text-align: center;
-  padding: 10px;
-  background-color: blue;
+  padding: 8px;
+  width: 30%;
+  background-color: #23293b;
   color: white;
   font-display: bold;
   font-size: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
-.container-home .walk .walk-text .btn button:hover {
+.container-home .walk .walk-text button:hover {
   background-color: swap;
 }
-.container-home .walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
-}
-.container-home .walk .walk-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.container-home .walk img {
+  width: 40%;
+  border-radius: 5%;
+  height: 100%;
 }
 @font-face {
   font-family: 'Russo One';

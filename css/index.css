@@ -1,0 +1,528 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.top-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top-box h3 {
+  font-size: 50px;
+  text-align: center;
+}
+.top-box nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.top-box nav a {
+  text-decoration: none;
+  color: slategrey;
+  font-size: 20px;
+  margin: 20px;
+  align-content: center;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 1rem 0;
+  border: 0.1rem double #e0e0e0;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  padding: 2rem 20rem;
+}
+@media screen and (max-width: 50rem) {
+  footer {
+    margin: 0 auto;
+    width: 100%;
+  }
+  footer p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px 100px;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 1.5rem 5rem 0rem;
+}
+.container-home .intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container-home .intro div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.container-home .intro div img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border-radius: 0%;
+}
+.container-home .intro h2 {
+  padding: 20px;
+}
+.container-home .intro p {
+  padding: 0 20px;
+}
+.container-home .space-images {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.container-home .space-images .blast {
+  width: 28%;
+  margin: 20px 2.5%;
+  height: 100%;
+  border-radius: 20px;
+}
+.container-home .space-images .sky {
+  width: 28%;
+  margin: 20px 2.5%;
+  height: 100%;
+  border-radius: 20px;
+}
+.container-home .space-images .launch {
+  width: 28%;
+  margin: 20px 2.5%;
+  height: 100%;
+  border-radius: 20px;
+}
+.container-home .visit-planets h3 {
+  padding: 20px;
+}
+.container-home .visit-planets p {
+  padding: 15px;
+}
+.container-home .walk {
+  margin-top: 50px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container-home .walk .walk-text {
+  width: 50%;
+}
+.container-home .walk .walk-text h3 {
+  margin-bottom: 1rem;
+}
+.container-home .walk .walk-text p {
+  margin-bottom: 0.5rem;
+}
+.container-home .walk img {
+  width: 50%;
+  border-radius: 5%;
+  height: 100%;
+}
+.container-home button {
+  text-align: center;
+  align-items: flex-start;
+  padding: 8px 8px;
+  width: 40%;
+  background-color: #23293b;
+  color: white;
+  font-display: bold 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin: 0;
+}
+.container-home button:hover {
+  background-color: white;
+  color: #23293b;
+}
+@media max-width 500px {
+  .container-home {
+    margin: 0 auto;
+  }
+  .container-home .space-images {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-home .space-images .blast {
+    width: 90%;
+    height: 0%;
+    margin: 2.5rem 10%;
+  }
+  .container-home .space-images .sky {
+    display: none;
+  }
+  .container-home .space-images .launch {
+    display: none;
+  }
+  .container-home .visit-planets h3 {
+    font-size: 3rem;
+    padding: 0% 2%;
+  }
+  .container-home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    padding: 4%;
+    align-items: center;
+  }
+  .container-home .walk .walk-text {
+    width: 100%;
+  }
+  .container-home .walk img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+  .container-home .walk button {
+    text-align: center;
+    align-items: flex-start;
+    padding: 25px 50px;
+    width: 100%;
+    background-color: #23293b;
+    color: white;
+    font-display: bold 15px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .container-home .walk button:hover {
+    background-color: white;
+    color: #23293b;
+  }
+}
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOz8mM.ttf) format('truetype');
+}

@@ -1,75 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
 // Home Content
 
-.home {
-
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 1.5rem 5rem 0rem;
   .intro {
-
+    .behave();
+    div {
+      .behave();
+      align-items: center;
+      img {
+        .behave();
+        align-items: center;
+        border-radius: 0%;
+      }
+    }
     h2 {
-      padding: 15px;
+      padding: 20px;
     }
-
     p {
-      padding:0 15px;
+      padding: 0 20px;
     }
-  
   }
-
   .space-images {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
-
-    img {
+    .blast {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
       height: 100%;
+      border-radius: 20px;
+    }
+    .sky {
+      .img-style()
+    }
+    .launch {
+      .img-style()
     }
   }
-
   .visit-planets {
-    padding: 15px;
-
     h3 {
-      margin-top: 11px;
+      padding: 20px;
     }
-
     p {
-      margin-top: 13px;
+      padding: 15px;
     }
   }
-
   .walk {
-    margin-top: 60px;
+    margin-top: 50px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-
     .walk-text {
       width: 50%;
-
       h3 {
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
       }
-
       p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
+        margin-bottom: .5rem;
       }
     }
+    img {
+      width: 50%;
+      border-radius: 5%;
+      height: 100%;
+    }
+  }
+  button {
+    .button-style();
+    border: 1px solid grey;
+    margin: 0;
+  } 
+} 
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
+@media @phone {
+  .container-home {
+    margin: 0 auto;
+    .space-images {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .blast {
+        width: 90%;
+        height: 0%;
+        margin: 2.5rem 10%;
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    }
+    .visit-planets {
+      h3 {
+        font-size: 3rem;
+        padding: 0% 2%;
+      }
+    }
+    .walk {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0 auto;
+      padding: 4%;
+      align-items: center;
+      .walk-text {
+        width: 100%;
+      }
       img {
         width: 100%;
-        height: auto;
-        border-radius: 10px;
+        height: 100%;
+        margin: 0;
+        padding-bottom: 2rem;
+      }
+      button {
+        .button-style(bold 15px, 25px 50px, 100%);
       }
     }
   }
-}// home
+}

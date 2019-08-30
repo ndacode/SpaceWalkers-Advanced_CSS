@@ -1,1 +1,30 @@
 // Mixins Here
+
+.button-style (@font-display: bold 20px; @padding: 8px 8px; @width: 40%;) {
+    text-align: center;
+    align-items: flex-start;
+    padding: @padding;
+    width: @width;
+    background-color: @pushme;
+    color: white;
+    font-display: @font-display;
+    font-size: 20px;
+    border-radius: 5px;
+        &:hover {
+            background-color: white;
+            color: @pushme;
+        }
+}
+
+.img-style(@width: 2.8rem; @margin: 2rem 2.5rem;@height: 10rem;@bradius: 2rem) {
+    width: 28%;
+    margin: 20px 2.5%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.behave() {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

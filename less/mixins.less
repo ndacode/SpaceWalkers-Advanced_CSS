@@ -1,13 +1,12 @@
 // Mixins Here
 
-.button-style (@font-display: bold 20px; @padding: 8px 8px; @width: 40%;) {
+.button-style () {
     text-align: center;
     align-items: flex-start;
     padding: @padding;
-    width: @width;
+    width: 10rem;
     background-color: @pushme;
     color: white;
-    font-display: @font-display;
     font-size: 20px;
     border-radius: 5px;
         &:hover {
@@ -16,13 +15,18 @@
         }
 }
 
-.img-style(@width: 2.8rem; @margin: 2rem 2.5rem;@height: 10rem;@bradius: 2rem) {
+.img-style() {
     width: 28%;
     margin: 20px 2.5%;
     height: 100%;
     border-radius: 20px;
+    animation-name: Rising;
+    animation-duration: 4s;
 }
-
+@keyframes Rising {
+    from {opacity: 0; transform: translateY(40px);}
+    to {opacity: 1; transform: translateY(0px);}
+  }
 .behave() {
     display: flex;
     flex-direction: column;

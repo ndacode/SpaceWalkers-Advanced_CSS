@@ -158,11 +158,11 @@ p {
 // Home Content
 
 .container-home {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 1000px;
-  margin: 1.5rem 5rem 0rem;
   .intro {
     .behave();
     div {
@@ -171,14 +171,19 @@ p {
       img {
         .behave();
         align-items: center;
-        border-radius: 0%;
+        border-radius: 2%;
+        margin-top: 10rem;
       }
     }
     h2 {
       padding: 20px;
+      animation-name: fadeImg;
+      animation-duration: 3s;
     }
     p {
       padding: 0 20px;
+      animation-name: fadeImg;
+      animation-duration: 3s;
     }
   }
   .space-images {
@@ -186,24 +191,27 @@ p {
     flex-direction: row;
     width: 100%;
     .blast {
-      width: 28%;
-      margin: 20px 2.5%;
-      height: 100%;
-      border-radius: 20px;
+      .img-style();
+      
     }
     .sky {
-      .img-style()
+      .img-style();
+      
     }
     .launch {
-      .img-style()
+      .img-style();
     }
   }
   .visit-planets {
     h3 {
       padding: 20px;
+      animation-name: fadeImg;
+      animation-duration: 3s;
     }
     p {
       padding: 15px;
+      animation-name: fadeImg;
+      animation-duration: 3s;
     }
   }
   .walk {
@@ -213,13 +221,19 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    animation-name: fadeImg;
+    animation-duration: 3s;
     .walk-text {
       width: 50%;
       h3 {
         margin-bottom: 1rem;
+        animation-name: fadeImg;
+        animation-duration: 3s;
       }
       p {
         margin-bottom: .5rem;
+        animation-name: fadeImg;
+        animation-duration: 3s;
       }
     }
     img {
@@ -230,12 +244,18 @@ p {
   }
   button {
     .button-style();
-    border: 1px solid grey;
-    margin: 0;
   } 
 } 
+@keyframes fadeImg {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes Rising {
+  from {opacity: 0; transform: translateY(40px);}
+  to {opacity: 1; transform: translateY(0px);}
+}
 
-@media @phone {
+@media (max-width: 50rem) {
   .container-home {
     margin: 0 auto;
     .space-images {
@@ -277,7 +297,8 @@ p {
         padding-bottom: 2rem;
       }
       button {
-        .button-style(bold 15px, 25px 50px, 100%);
+         .button-style();
+         width: 100%;
       }
     }
   }

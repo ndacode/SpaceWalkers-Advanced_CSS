@@ -4,9 +4,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    position: fixed;
+    background-color: white;
     h3 {
         font-size: 50px;
         text-align: center;
+        text-shadow: 5px 5px lightgrey;
+        margin-top: 1rem;
+        animation-name: floaty;
+        animation-duration: 5s;
+    }
+    @keyframes floaty {
+        from {color: @sea-shell;}
+        to {color: @title;}
     }
     nav {
         display: flex;
@@ -15,9 +26,14 @@
         a {
             text-decoration: none;
             color: @greymatter;
-            font-size: 20px;
+            font-size: 1rem;
             margin: 20px;
             align-content: center;
+            animation-name: floaty;
+            animation-duration: 10s;
+        }
+        a:hover {
+            text-decoration-line: underline;
         }
     }
 }
